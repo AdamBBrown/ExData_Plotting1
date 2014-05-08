@@ -1,5 +1,7 @@
 ## Introduction
 
+<b><a href="#filelist">The file lists are located at the bottom of the README, click here to view them.<a><b>
+
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
 Learning Repository</a>, a popular repository for machine learning
@@ -35,16 +37,15 @@ web site</a>:
 
 ## Loading the data
 
-
-
-
-
 When loading the dataset into R, please consider the following:
 
 * The dataset has 2,075,259 rows and 9 columns. First
 calculate a rough estimate of how much memory the dataset will require
 in memory before reading into R. Make sure your computer has enough
 memory (most modern computers should be fine).
+
+- Reading in 1% of the data yields and estimate of 116.8 Mb
+- After reading the full dataset, the object should consume approximately 87.6 Mb of memory with latest versions of R/R Studio
 
 * We will only be using data from the dates 2007-02-01 and
 2007-02-02. One alternative is to read the data from just those dates
@@ -57,6 +58,13 @@ functions.
 
 * Note that in this dataset missing values are coded as `?`.
 
+## Transforming The Data
+
+After loading the subset of the data we will be looking at (2007-02-01 & 2007-02-02) the date and time columns were combined
+into one new column called datetime.
+
+Each of the measurement columns we were interested in (Global_active_power, Voltage, Global_reactive_power, Sub_metering_1, 
+Sub_metering_2, and Sub_metering_3) were converted to numeric and their NA values changed from "?" and "NA" to <NA>.
 
 ## Making Plots
 
@@ -88,27 +96,28 @@ When you are finished with the assignment, push your git repository to
 GitHub so that the GitHub version of your repository is up to
 date. There should be four PNG files and four R code files.
 
+## FileList <a name="filelist"></a>
 
 The four plots that you will need to construct are shown below. 
 
 
 ### Plot 1
 
-
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+The R code for this plot is in the repository and called plot1.R.<br>
+The png output file is in the figure subfolder and is called plot1.png
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
-
+The R code for this plot is in the repository and called plot2.R.<br>
+The png output file is in the figure subfolder and is called plot2.png
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
-
+The R code for this plot is in the repository and called plot3.R.<br>
+The png output file is in the figure subfolder and is called plot3.png
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
-
+The R code for this plot is in the repository and called plot4.R.<br>
+The png output file is in the figure subfolder and is called plot4.png
